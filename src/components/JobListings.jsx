@@ -1,7 +1,7 @@
 import React from 'react'
 import jobs from '../jobs.json'
 
-const JobListing = () => {
+const JobListings = ({job}) => {
     const recentJobs = jobs.slice(0, 3)
     return (
         <section className='bg-blue-50 px-4 py-10'>
@@ -43,4 +43,4 @@ const JobListing = () => {
     )
 }
 
-export default JobListing
+export default JobListings
